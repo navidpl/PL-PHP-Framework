@@ -1,0 +1,8 @@
+{
+    "config":{
+        "DB":{
+            "connection":" $mysql_host = '127.0.0.1';\n  $mysqli = new mysqli($mysql_host, $mysql_user, $mysql_pass, $mysql_db);\n  if ($mysqli->connect_errno) {    echo \"Failed to connect to MySQL: \" . $mysqli->connect_error;\n ?>  }",
+            "test":"curl /core/connect.inc.php"
+        }
+    }
+}
